@@ -15,7 +15,9 @@ Cote serveur, index.js, on va poser une écoute pour qu'a chaque connexion les f
 io.sockets.on('connection', function(socket, pseudo){
 	console.log('New user');
 	
-//On pose une écoute avec le mot clef 'newusr', on lui donne en paramètre le pseudo puis nous encodons ce pseudo (un peu de sécurité ne fait jamais de mal), on le stock dans une variable puis on averti tout les autres utilisateurs, y compris sois-même. 
+//On pose une écoute avec le mot clef 'newusr'
+// On lui donne en paramètre le pseudo puis nous encodons ce pseudo (un peu de sécurité ne fait jamais de mal)
+// On le stock dans une variable puis on averti tout les autres utilisateurs.
 	
 	socket.on('newusr', function(pseudo){
 		pseudo = ent.encode(pseudo);
@@ -36,7 +38,8 @@ socket.on('newusr', function(pseudo){
 C'est parti pour les messages
 
 ```
-// Dès qu'on reçoit un message, on récupère le pseudo de son auteur et on le transmet aux autres personnes.
+// Dès qu'on reçoit un message,
+// on récupère le pseudo de son auteur et on le transmet aux autres personnes.
 
 socket.on('message', function (message) {
    message = ent.encode(message);
@@ -47,7 +50,9 @@ socket.on('message', function (message) {
 Notre fichier serveur est (déjà) fini ! Don't be sad, ils nous reste du travail cote client ! 
 
 ```
-// Lorsqu'on envoie le formulaire,on recupere la valeur de l'input, on emit le message et on l'affiche avec notre fonction insertMessage sur la page
+// Lorsqu'on envoie le formulaire,on recupere la valeur de l'input
+// On emit le message et on l'affiche avec notre fonction insertMessage sur la page
+
  $('#formulaire_chat').submit(function () {
      var message = $('#message').val();
      socket.emit('message', message); // Transmet le message aux autres
@@ -71,7 +76,3 @@ socket.on('message', function(data) {
 insereMessage(data.pseudo, data.message)
 })
 ```
-	
-=======
-# codinTchat-socket.io
->>>>>>> 8e2e492075d64654a8e5b41adc09fd1d95c2710f
