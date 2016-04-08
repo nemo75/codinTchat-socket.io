@@ -1,5 +1,12 @@
 #Faire un chat sous socket.io(node.js) !
 
+Une fois le repo clone il vous suffit de faire un 'npm install'. Une fois le repos pret lancer deux terminales dans le permier ecrivez "nodemonde index.js" dans le second "gulp watch"
+
+Votre serveur est maintenant en ligne sur votre localhost au port 3000 !
+
+
+
+
 On commencer par faire un prompt pour récupérer le pseudo, on l'envoi au serveur (socket.emit) et on l'affiche dans le titre pour le style.
 ```
 var pseudo = prompt('Quel est votre pseudo ?');
