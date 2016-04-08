@@ -85,3 +85,10 @@ socket.on('message', function(data) {
 insereMessage(data.pseudo, data.message)
 })
 ```
+
+Si tout va bien vous devriez avoir un tchat qui fonctionne (pseudo + message). Maintenant que vous avez tout compris :) vous allez pouvoir le personnaliser ! C'est la que le fun commence ! 
+
+## Bonus  :
+*Modifier la couleur du pseudo && || du message. // il suffit de comprendre a quel endroit du code on integre le pseudo.
+*Afficher l'heure a l'envoi des messages. 
+*Afficher la liste des utilisateurs connectes.
