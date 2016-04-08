@@ -1,3 +1,5 @@
+#Faire un chat sous socket.io(node.js) !
+
 On commencer par faire un prompt pour récupérer le pseudo, on l'envoi au serveur (socket.emit) et on l'affiche dans le titre pour le style.
 ```
 var pseudo = prompt('Quel est votre pseudo ?');
@@ -16,7 +18,7 @@ io.sockets.on('connection', function(socket, pseudo){
 	console.log('New user');
 	
 //On pose une écoute avec le mot clef 'newusr'
-// On lui donne en paramètre le pseudo puis nous encodons ce pseudo (un peu de sécurité ne fait jamais de mal)
+// On lui donne en paramètre le pseudo puis nous encodons ce pseudo
 // On le stock dans une variable puis on averti tout les autres utilisateurs.
 	
 	socket.on('newusr', function(pseudo){
