@@ -1,0 +1,63 @@
+body {
+	background-position: center;
+	background-image: url(../images/corn.jpg);*/
+	background-size: cover;
+	overflow: none;
+	background-repeat: no-repeat;	
+}
+html {
+	height: 100%;
+	width: 100%;
+}
+.title {
+	width: 100%;
+	height: auto;
+	padding: 10px;
+	background-color: #E20746;
+	margin-bottom: 2%;
+	display: inline-block;
+}
+.titre {
+	text-align: center;
+	color:white;
+}
+.master {
+	width: 1200px;
+	margin: auto
+}
+
+.block {
+	display: inline-block;
+	width: 950px;
+	height: 550px;
+	margin: auto;
+	box-shadow: 25px;
+}
+#zone_tchat {
+	height: 500px;
+	width:950px;
+	border: 1px solid #E20746;
+	margin: 0 auto 1px auto;
+	overflow-y: scroll;
+	background-color: rgba(255,255,255,0.6);
+	border-radius: 0px;
+	border-bottom-left-radius: 8px;
+	border: 1px solid rgb(266,7,70) !important;
+}
+#message {
+	border-radius:0px; 
+	border:1px solid #E20746 ; 
+	width:830px; margin:0px; 
+	height:38px;
+	background-color:rgba(255,255,255,0.6);
+	border-bottom-left-radius:8px;
+	padding: 0 0 0 10px;
+}
+#form_submit{
+	border-radius:0px;
+	border:1px solid #E20746; 
+	width:100px;
+	height:38px;
+	margin:0px;
+	text-transform:uppercase;
+}
