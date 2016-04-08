@@ -72,3 +72,6 @@ insereMessage(data.pseudo, data.message)
 })
 ```
 	
+=======
+# codinTchat-socket.io
+>>>>>>> 8e2e492075d64654a8e5b41adc09fd1d95c2710f
